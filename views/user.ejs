@@ -1,0 +1,9 @@
+<%- setBlock('title', 'user', '{{base}}User') %>
+
+<h1>users</h1>
+
+
+<%- setBlock('footer', 'user',
+  '<script>var userId = ' + id + ';</script>' +
+  '<script src="/js/user.js"></script>'
+  ) %>

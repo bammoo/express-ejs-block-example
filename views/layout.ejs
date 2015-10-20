@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <meta charset="utf-8" />
+    <%- setBlock('title', 'base', 'Myapp - ') %>
+    <title><%- blocks.title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- blocks.header %>
   </head>
   <body>
     <%- body %>
+
+    <%- blocks.footer %>
   </body>
 </html>
