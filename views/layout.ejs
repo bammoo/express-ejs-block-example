@@ -4,12 +4,15 @@
     <meta charset="utf-8" />
     <%- setBlock('title', 'base', 'Myapp - ') %>
     <title><%- blocks.title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='/stylesheets/style.css' />
     <%- blocks.header %>
   </head>
   <body>
     <%- body %>
 
+    <script type="text/javascript">
+    var App = {};
+    </script>
     <%- blocks.footer %>
   </body>
 </html>
